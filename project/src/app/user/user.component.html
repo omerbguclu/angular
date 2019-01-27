@@ -1,0 +1,22 @@
+<p>
+  user works!
+  {{salud}}
+</p>
+<table>
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+      Surname
+    </th>
+  </tr>
+  <tr *ngFor='let user of myUserList'>
+    <td>
+      {{user.name}}
+    </td>
+    <td>
+      {{user.surname}}
+    </td>
+  </tr>
+</table>
