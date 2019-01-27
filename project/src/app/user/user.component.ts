@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserList } from './userlist';
 import { User } from './user';
+import { MetaService } from './meta.service';
 
 @Component({
   selector: 'app-user',
@@ -9,20 +10,32 @@ import { User } from './user';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
-  myUserList: User[];
+  constructor(private userService:MetaService) { }
+  myUserList:User[];
   salud: string;
+  person:User = new User;
   ngOnInit() {
     this.myUserListFunction();
-    this.salud = this.testFunction();
+
   }
 
   myUserListFunction() {
-    this.myUserList = UserList;
+    //this.myUserList = UserList;
+    this.salud = this.testFunction();
+    this.myUserList = this.userService.getList();
   }
 
   testFunction() {
     return 'hello there!';
+  }
+
+  addUser(){
+    //this.person.userId=10;
+    this.person.name='Gokhan';
+    this.person.surname='Bguclu';
+    //this.person.sex='Male';
+    //this.person.age=45;
+    this.userService.create(this.person);
   }
 
 }
