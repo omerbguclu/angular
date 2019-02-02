@@ -2,7 +2,7 @@
   user works!
   {{salud}}
 </p>
-<table>
+<!--<table>
   <tr>
     <th>
       Name
@@ -19,6 +19,33 @@
       {{user.surname}}
     </td>
   </tr>
+</table>-->
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th></th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th>Update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let user of myUserList'>
+      <td><i class="fas fa-address-card"></i></td>
+      <td>
+        {{user.name}}
+      </td>
+      <td>
+        {{user.surname}}
+      </td>
+      <td>
+          <!--<i class="fas fa-trash"></i>-->
+          <i class="fab fa-accessible-icon"></i>
+        <!--<input class="btn btn-primary" type="submit" value="Submit">-->
+      </td>
+    </tr>
+  </tbody>
 </table>
 
-<a href='#' (click)='addUser()'>Add New Person</a>
+<button class="btn btn-primary"><a href='#' style="text-decoration:none;color:white" (click)='addUser()'>Add New Person</a></button>
