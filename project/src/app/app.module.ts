@@ -13,6 +13,8 @@ import { ProfileComponent } from './user/profile/profile.component';
 import { NewUserComponent } from './user/new-user/new-user.component';
 import { ProductComponent } from './product/product.component';
 import { NewproductComponent } from './product/newproduct/newproduct.component';
+import { PostComponent } from './post/post.component';
+import { NewpostComponent } from './post/newpost/newpost.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { NewproductComponent } from './product/newproduct/newproduct.component';
     NewUserComponent,
     ProductComponent,
     NewproductComponent,
+    PostComponent,
+    NewpostComponent,
   ],
   imports: [
     BrowserModule,

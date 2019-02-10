@@ -13,10 +13,10 @@ export class ProductComponent implements OnInit {
   productList: Product[];
 
   ngOnInit() {
-    this.productService.getProductList.subscribe(
+/*    this.productService.getProductList.subscribe(
       response => {
         this.productList = response;
-      });
+      });*/
   }
 
 }
