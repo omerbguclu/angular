@@ -2,33 +2,33 @@
   new-user works!
 </p>
 <div class=" container">
-    <h1 class="page-header">New User</h1>
-    <form #userForm="ngForm" (ngSubmit)="userInsert()">
-    
-    
-    <div class="form-group" >
-    <label>Name</label>
-    <input type="text" class="form-control" name="name" [(ngModel)]="newUser.name" >
-    </div>
-    
-    
+  <h1 class="page-header">New User</h1>
+  <form #userForm="ngForm" (ngSubmit)="userInsert()">
+
+
     <div class="form-group">
-    <label>Surname</label>
-    <input type="text" class="form-control" name="surname" [(ngModel)]="newUser.surname" >
+      <label>Name</label>
+      <input type="text" class="form-control" name="name" [(ngModel)]="newUser.name">
     </div>
-    
+
+
     <div class="form-group">
-    <label for="exampleFormControlSelect1">Sex</label>
-    <select class="form-control" name="sex" [(ngModel)]="newUser.sex" >
-    <option>Male</option>
-    <option>Female</option>
-    </select>
+      <label>Surname</label>
+      <input type="text" class="form-control" name="surname" [(ngModel)]="newUser.surname">
     </div>
-    
+
     <div class="form-group">
-    <label>Age</label>
-    <input type="text" class="form-control" name="age" [(ngModel)]="newUser.age" >
+      <label for="exampleFormControlSelect1">Sex</label>
+      <select class="form-control" name="sex" [(ngModel)]="newUser.sex">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Age</label>
+      <input type="text" class="form-control" name="age" [(ngModel)]="newUser.age">
     </div>
     <button class="btn-primary" type="submit">Submit</button>
-    </form>
-    </div>
+  </form>
+</div>

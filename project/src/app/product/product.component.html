@@ -1,0 +1,28 @@
+<p>
+  product works!
+</p>
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th></th>
+      <th scope="col">CategoryId</th>
+      <th scope="col">ProductId</th>
+      <th scope="col">ProductName</th>
+      <th scope="col">QuantityPerUnit</th>
+      <th scope="col">UnitPrice</th>
+      <th scope="col">UnitInStock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let pr of productList'>
+      <td><i class="fas fa-address-card"></i></td>
+      <td>{{pr.CategoryId}}</td>
+      <td>{{pr.ProductId}}</td>
+      <td>{{pr.ProductName}}</td>
+      <td>{{pr.QuantityPerUnit}}</td>
+      <td>{{pr.UnitPrice}}</td>
+      <td>{{pr.UnitInStock}}</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
