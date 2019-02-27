@@ -14,23 +14,18 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor='let postT of postList'>
+      <tr *ngFor='let post of postList'>
         <td>
-          {{postT.userId}}
+          {{post.userId}}
         </td>
         <td>
-          {{postT.id}}
+          {{post.id}}
         </td>
         <td>
-          {{postT.title}}
+          {{post.title}}
         </td>
         <td>
-          {{postT.body}}
-        </td>
-        <td>
-            <!--<i class="fas fa-trash"></i>-->
-            <i class="fab fa-accessible-icon"></i>
-          <!--<input class="btn btn-primary" type="submit" value="Submit">-->
+          {{post.body}}
         </td>
       </tr>
     </tbody>

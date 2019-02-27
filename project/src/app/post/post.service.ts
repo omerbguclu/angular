@@ -8,12 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class PostService {
 
-  postList: Post[];
+  postList: Post[] = new Array();
 
   constructor(private http:HttpClient) { }
 
   postCreate(post:Post) {
-    this.postList.push(post);
+    //this.postList.push(post);
     this.http.post("https://jsonplaceholder.typicode.com/posts",post);
   }
 
